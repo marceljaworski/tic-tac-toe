@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class SquareComponent {
 
+  rando: number = Math.random();
+  // constructor() {
+  //   setInterval(() => this.rando = Math.random(), 500);
+  // }
+
+
 }
