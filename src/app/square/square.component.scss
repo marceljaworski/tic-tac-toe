@@ -4,12 +4,24 @@ button {
     font-size: 5rem;
     color: #f2f2f2;
     background-color: #A948F4;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9c2cf1
 }
 
 .x_class {
     background-color: #0EE178;
 }
+.x_class:hover {
+    background-color: #06ff82;
+}
 
 .o_class {
     background-color: #24B8FA;
+}
+.o_class:hover {
+    background-color: #68c7f3;
 }
