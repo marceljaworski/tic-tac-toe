@@ -1,13 +1,19 @@
 main {
     display: grid;
+    @media only screen and (min-width: 768px) {
+        grid-template-columns: repeat(3, 150px);
+    }
     grid-template-columns: repeat(3, 100px);
     grid-gap: 0px;
-    margin-top: .5rem;
+    margin-top: .2rem;
 
 }
 
 app-square {
     height: 100px;
+    @media only screen and (min-width: 768px) {
+        height: 150px
+    }
 }
 
 h1, h2 {
@@ -15,11 +21,57 @@ h1, h2 {
     color: #f2f2f2;
 }
 
-button {
-    background-color: #404040;
-    color: #f54601;
-    border: 1px #f54601 solid;
-    padding: .2rem;
-    cursor: pointer;
+.winner {
+    @media only screen and (min-width: 480px) {
+        position: absolute;       
+        top: 0.8rem;
+        left: 3rem;
+    }
+    @media only screen and (min-width: 768px) {
+        position: absolute;       
+        top: 0.8rem;
+        left: 5rem;
+    }
 }
 
+button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.2em;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
+}
+
+button span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  background-color: #212121;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #fff;
+  border: 0.08em solid #fff;
+  box-shadow: 0 0.2em 0.1em 0.019em #fff;
+  
+}
+
+button span:hover {
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
+}
+
+button span:not(hover) {
+  transition: all 1s;
+}
+
+  
