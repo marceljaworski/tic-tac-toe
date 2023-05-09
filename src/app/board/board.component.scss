@@ -7,9 +7,7 @@ main {
 }
 
 app-square {
-    border: 1px gray solid;
     height: 100px;
-    color: #f2f2f2;
 }
 
 h1, h2 {
@@ -17,10 +15,11 @@ h1, h2 {
     color: #f2f2f2;
 }
 
+
 button {
     background-color: #404040;
-    color: #ff0000;
-    border: 1px #ff0000 solid;
+    color: #f54e01;
+    border: 1px #f54601 solid;
     padding: .2rem;
 }
 

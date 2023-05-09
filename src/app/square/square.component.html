@@ -1,1 +1,1 @@
-<button  [ngClass]="value == 'X' ? 'x_class' : 'o_class'">{{ value }}</button>
+<button  [ngClass]="{'x_class': value == 'X', 'o_class' : value == 'O'}">{{ value }}</button>
